@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏳️‍🌈</text></svg>">
+  <title>Maricoteca FDD</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="logo">
+      <br></br>
+      <img src="https://svgur.com/i/t9i.svg"></img>
+    </div>
+    <div id="search-container">
+      <input type="search" id="search-input" placeholder="Buscá libros acá..." />
+      <button id="search">Click para buscar 🔎</button>
+    </div>
+    <div id="buttons">
+      <button class="button-value" onclick="filterProduct('all')">Todos</button>
+      <button class="button-value" onclick="filterProduct('Infantil')">Infantil</button>
+      <button class="button-value" onclick="filterProduct('TeoríaQueer')">TeoríaQueer</button>
+      <button class="button-value" onclick="filterProduct('Periodístico')">Periodístico</button>
+      <button class="button-value" onclick="filterProduct('Entrevistas')">Entrevistas</button>
+      <button class="button-value" onclick="filterProduct('Historia')">Historia</button>
+      <button class="button-value" onclick="filterProduct('Biografía')">Biografía</button>
+      <button class="button-value" onclick="filterProduct('Arte')">Arte</button>
+      <button class="button-value" onclick="filterProduct('Teoría')">Teoría</button>
+      <button class="button-value" onclick="filterProduct('PolíticaPública')">PolíticaPública</button>
+      <button class="button-value" onclick="filterProduct('Otros')">Otros</button>
+    </div>
+    <div id="reserva">
+      <p>&nbsp;</p><button class="button-reserva" onclick="window.location.href = 'https://www.formulario.com';">Para
+        reservar un libro, hacé click acá 👆📚</button>
+    </div>
+    <div id="products"></div>
+  </div>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

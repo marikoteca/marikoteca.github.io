@@ -19,7 +19,7 @@ body {
 }
 #search-container input {
   background-color: transparent;
-  width: 40%;
+  width: 50%;
   border-bottom: 2px solid #000000;
   padding: 1em 0.3em;
 }

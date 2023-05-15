@@ -73,7 +73,7 @@ let products = {
   portada: "https://ladiaria.com.uy/media/photologue/photos/cache/tapa-lento58_700w.png",
 },
 {
-  nombreYautor: "Incorrecta - Varies",
+  nombreYautor: "Incorrecta - Varies autores",
   categoria: "Periodístico",
   codigo: "PIV2016",
   portada: "https://1.bp.blogspot.com/-7NqsY6kkUE0/V1CohGECLiI/AAAAAAAAAQw/eYszPqQmy-Q8hqnfROjlk0DFPmoS44-RACLcB/s1600/new%2B%25282%2529.png",

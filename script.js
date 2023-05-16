@@ -6,8 +6,8 @@ let products = {
       categoria: "Infantil",
       codigo: "INNVGR2018",
       portada:
-        "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/MGIJVMWDONET3CXQGNZWXN55TY.png",
-      prologo: "",
+        "https://arc-anglerfish-arc2-prTod-copesa.s3.amazonaws.com/public/MGIJVMWDONET3CXQGNZWXN55TY.png",
+      prologo: "Algunas veces Martina siente que la tratan diferente y no entiende cuál es la razón. Conociendo otras realidades, como la de Martina, es que aprendemos a respetar y a valorar la diversidad. Celebrar las diferencias en los demás, es también aceptar las propias. ¡Lo mismo que te hace diferente, te hace insuperable!",
     },
     {
       nombreYautor: "Zapatos cambiados  - Gaston Rosa",
@@ -15,7 +15,7 @@ let products = {
       codigo: "IZCGR2018",
       portada:
         "https://p.calameoassets.com/171031124756-99ca4d4aafd77325f03b1bce8c5e0d6f/p1.jpg",
-      prologo: "",
+      prologo: "Este es el cuento sobre como dos hermanitos cambian la historia de un pueblo. Se les ocurre una idea que se vuelve la nueva tradicción del lugar. Ponerse en los zapatos del otro es comprender, respetar y valorar la diversidad. Y eso también sirve para que puedas aceptarte a ti mismo. ¡Lo mismo que te hace diferente, te hace insuperable!",
     },
     {
       nombreYautor: "La niña que tenía dos papás - Mel Elliott",
@@ -23,7 +23,7 @@ let products = {
       codigo: "INTDPME2019",
       portada:
         "https://cdn.edelvives.es/docs/catalogo/15890/imgs/original/165015_Cub_DosPadres_Ev_web.jpg",
-      prologo: "",
+      prologo: "Berta está emocionada con Matilda, la niña nueva que ha llegado a su colegio; ¡es igualita a ella! Solo se diferencian en una cosa: Matilda tiene dos papás. Berta está deseando conocerlos, ¡seguro que en su casa todo es muy diferente!",
     },
     {
       nombreYautor: "El vestido más lindo del mundo - Monica dos Santos",
@@ -31,7 +31,7 @@ let products = {
       codigo: "IVMLMMDS2016",
       portada:
         "https://sujetossujetados.files.wordpress.com/2021/01/infancias2-2.jpg",
-      prologo: "",
+      prologo: "Una niña llamada Naiat recibe de su madre un vestido que no le gusta, por lo que recorre las casas de sus vecinas y sus amigas buscando ayuda. Las mujeres con las que se encuentra la van decorando con zapatos, un peinado, accesorios y detalles, hasta que, finalmente, siente que tiene «el vestido más lindo del mundo». La niña termina con un vestido que le gusta, repleto de valores y riquezas colectivas, porque encontró contención y apoyo en la gente que la rodea.",
     },
     {
       nombreYautor: "El vestido de mamá  - Dani Umpi",
@@ -39,7 +39,7 @@ let products = {
       codigo: "IEVDMDU2011",
       portada:
         "https://bichuna.uy/wp-content/uploads/2021/08/D_NQ_NP_787221-MLU20737376979_052016-O.jpg",
-      prologo: "",
+      prologo: "Un niño esta encantado con el vestido verde que su mamá usa para ir a las fiestas. Se imagina otra ropa con esa tela mágica. Un día decide ponerse el vestido sobre su equipo de futbol y sale a jugar con sus amigos. En la plaza se encuentra con que hay algunos códigos que no son tan fáciles de entender. Y todavía tiene que volver a casa con el vestido cubierto de barro…",
     },
     {
       nombreYautor: "Susy Shock para chixs - Nadia Fink y Pitu Saá",
@@ -47,7 +47,7 @@ let products = {
       codigo: "ISSPCNFPS2018",
       portada:
         "https://d3ugyf2ht6aenh.cloudfront.net/stores/968/871/products/susy-shock-antiprincesas-infantil-genero-libro-d_nq_np_819619-mla27329208127_052018-f1-ca0a31b3e6f2b9d2a715586411413093-640-0.jpg",
-      prologo: "",
+      prologo: "Esta es una historia llena de abrazos porque a Susy Shock, la protagonista, la abrazaron desde pequeña en sus múltiples formas de sentir y de pensar. Ella se define como travesti o, mejor dicho, como “trava”. ¿Y qué significa eso? Que eligió ser como siente. Susy nos cuenta su vida y verás qué feliz se siente y qué segura de sí misma. Nuestra Antiprincesa Colibrí nos habla de todas las posibilidades de ser y de soñar. También se repasan las historias de otras colibrís: Lohana Berkins, Diana Sacayán, Marlene Wayar y su amiguita Luana.",
     },
     {
       nombreYautor: "Un apartamento en Urano - Paul B. Preciado",
@@ -269,7 +269,7 @@ for (let i of products.data) {
   prologo.innerText = "Leer prólogo +";
   prologo.addEventListener("click", () => {
     if (!prologoClicked) {
-      let prologo = document.createElement("h5");
+      let prologo = document.createElement("h6");
       prologo.innerText = i.prologo;
       container.appendChild(prologo);
       card.appendChild(container);

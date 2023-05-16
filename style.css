@@ -6,26 +6,59 @@
   outline: none;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: #ffffff;
   align-content: center;
 }
+
+/*urls*/
+a:link {
+  color: #1e1e1e;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 24px;
+}
+a:visited {
+  color: #1e1e1e;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 24px;
+}
+a:hover {
+  color: #198201;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 24px;
+}
+a:active {
+  color: #198201;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+/*urls*/
 .wrapper {
   width: 95%;
   margin: 0 auto;
 }
+
 #search-container {
   margin: 1em 0;
 }
+
 #search-container input {
   background-color: transparent;
-  width: 50%;
+  width: 60%;
   border-bottom: 2px solid #000000;
   padding: 1em 0.3em;
 }
+
 #search-container input:focus {
   border-bottom-color: #1e1e1e;
 }
+
 #search-container button {
   padding: 1em 2em;
   margin-left: 1em;
@@ -34,6 +67,7 @@ body {
   border-radius: 5px;
   margin-top: 0.5em;
 }
+
 .button-value {
   border: 2px solid #1e1e1e;
   padding: 1em 2.2em;
@@ -42,12 +76,13 @@ body {
   color: #1e1e1e;
   cursor: pointer;
 }
+
 .active {
   background-color: #1e1e1e;
   color: #ffffff;
 }
-#reserva 
-.button-reserva {
+
+#reserva .button-reserva {
   border: 2px solid #ffffff;
   padding: 1em 2.2em;
   border-radius: 3em;
@@ -55,12 +90,14 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
+
 #products {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 1.5em;
   padding: 2em 0;
 }
+
 .card {
   background-color: #ffffff;
   max-width: 18em;
@@ -69,37 +106,46 @@ body {
   border-radius: 5px;
   box-shadow: 0em 0em 0.5em rgba(14, 14, 14, 0.243);
 }
+
 .image-container {
   text-align: center;
 }
+
 .logo>img {
   height: 80px;
 }
+
 img {
   max-width: 100%;
   object-fit: contain;
   height: 15em;
 }
+
 .container {
   padding-top: 1em;
   color: #000000;
 }
+
 .container h5 {
   font-weight: 500;
 }
+
 .hide {
   display: none;
 }
+
 @media screen and (max-width: 720px) {
   img {
     max-width: 100%;
     object-fit: contain;
     height: 10em;
   }
+
   .card {
     max-width: 10em;
     margin-top: 1em;
   }
+
   #products {
     grid-template-columns: auto auto;
     grid-column-gap: 1em;

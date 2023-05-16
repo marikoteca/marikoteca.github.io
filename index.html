@@ -13,14 +13,23 @@
 </head>
 
 <body>
+  <!-- cuerpo de la pagina -->
   <div class="wrapper">
+    
     <div class="logo">
       <br></br>
       <img src="https://svgur.com/i/t9i.svg"></img>
     </div>
+      <!-- iconos de redes sociales -->
+  <div style="padding:37px; position: absolute; top: 0; right: 0;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="https://www.instagram.com/fdd_uy/" class="fa fa-instagram" target="_blank" style="margin: 10px;" />
+    <a href="mailto:espaciofdd@gmail.com" target="_blank" style="margin: 10px;">✉</a>
+  </div>
     <div id="search-container">
       <input type="search" id="search-input" placeholder="Buscá libros acá..." />
-      <button id="search" style="cursor:pointer;" onmouseover="this.style.cursor='pointer'">Click para buscar 🔎</button>
+      <button id="search" style="cursor:pointer;" onmouseover="this.style.cursor='pointer'">Click para buscar
+        🔎</button>
     </div>
     <div id="buttons">
       <button class="button-value" onclick="filterProduct('all')">Todos</button>
@@ -37,9 +46,9 @@
     </div>
     <div id="reserva">
       <p>&nbsp;</p>
-       <form target="_blank" action="https://docs.google.com/forms/d/1hAr4ecMqqAkaP6YRIVxGKtP0iP-Foz8yscH9sTefbjw">
+      <form target="_blank" action="https://forms.gle/iqrjsqS9PaMAPtJb9">
         <input class="button-reserva" type="submit" value="Para leer o reservar un libro, click acá 👆📚" />
-    </form>
+      </form>
     </div>
     <div id="products"></div>
   </div>

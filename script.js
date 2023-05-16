@@ -6,7 +6,7 @@ let products = {
       categoria: "Infantil",
       codigo: "INNVGR2018",
       portada:
-        "https://arc-anglerfish-arc2-prTod-copesa.s3.amazonaws.com/public/MGIJVMWDONET3CXQGNZWXN55TY.png",
+        "https://cdnx.jumpseller.com/el-gran-escape/image/24048569/resize/540/540?1652125806",
       prologo: "Algunas veces Martina siente que la tratan diferente y no entiende cuál es la razón. Conociendo otras realidades, como la de Martina, es que aprendemos a respetar y a valorar la diversidad. Celebrar las diferencias en los demás, es también aceptar las propias. ¡Lo mismo que te hace diferente, te hace insuperable!",
     },
     {

@@ -10,36 +10,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  <style>
+  <!--style>
     body {
-      background-image: url("t9i.svg");
+      background-image: url("LOGO.svg");
       background-repeat: no-repeat;
       background-size: 500px;
     }
-  </style>
+  </style-->
 </head>
 
 <body>
-    <!-- iconos de redes sociales -->
-    <div style="float: right; padding:20px;">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <a href="https://www.instagram.com/fdd_uy/" class="fa fa-instagram" target="_blank" style="margin: 10px;" />
-      <a href="mailto:espaciofdd@gmail.com" target="_blank" style="margin: 10px;">✉</a>
-    </div>
+  <!-- iconos de redes sociales -->
+  <div style="position:absolute; top:0; right:0; padding:2em  ;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="https://www.instagram.com/fdd_uy/" class="fa fa-instagram" target="_blank" style="margin: 10px;"></a>
+    <a href="mailto:espaciofdd@gmail.com" class="fa fa-envelope-o" target="_blank" style="margin: 10px;"></a>
+  </div>
+  <div class="container" id="at-header">
+    <img class="image" id="logo" src="LOGO.svg" />
+  </div>
   <!-- cuerpo de la pagina -->
   <div class="wrapper">
-
-    <!--div class="logo">
-      <br></br>
-      <img src="https://svgur.com/i/t9i.svg"></img>
-    </div-->
-    <div style="margin-top: 130px;" id="search-container">
+    <div style="margin-top: 1em;" id="search-container">
       <input type="search" id="search-input" placeholder="Buscá libros acá..." />
       <button id="search" style="cursor:pointer;" onmouseover="this.style.cursor='pointer'">Click para buscar
         🔎</button>
     </div>
     <div id="buttons">
-      <button class="button-value" onclick="filterProduct('all')">Todos</button>
+      <!--button class="button-value" onclick="filterProduct('all')">Todos</button-->
       <button class="button-value" onclick="filterProduct('Infantil')">Infantil</button>
       <button class="button-value" onclick="filterProduct('TeoríaQueer')">TeoríaQueer</button>
       <button class="button-value" onclick="filterProduct('Periodístico')">Periodístico</button>

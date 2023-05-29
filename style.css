@@ -12,6 +12,20 @@ body {
   align-content: center;
 }
 
+#at-header {
+  text-align: left;
+  margin: 2em 0em 0em 2em;
+}
+
+#logo {
+/*  height: 50px;
+  width: 150px;*/
+  max-width: 60%;
+  height: auto;
+  width: auto\9s; /* ie8 */
+
+}
+
 /*urls*/
 a:link {
   color: #1e1e1e;
@@ -126,12 +140,19 @@ img {
   color: #000000;
 }
 
+.container h4 {
+  font-weight: 700;
+  font-size: 12px;
+  font-style:italic;
+}
+
 .container h5 {
   font-weight: 500;
 }
 
 .container h6 {
   font-weight: 200;
+  text-align: justify
 }
 
 .hide {

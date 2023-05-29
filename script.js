@@ -1,4 +1,4 @@
-let nohay = "https://cdn-icons-png.flaticon.com/512/4659/4659326.png";
+let nohay = "NOHAY.png";
 let products = {
   data: [
     {
@@ -6,7 +6,7 @@ let products = {
       categoria: "Infantil",
       codigo: "INNVGR2018",
       portada:
-        "https://cdnx.jumpseller.com/el-gran-escape/image/24048569/resize/540/540?1652125806",
+        "INNVGR2018.webp",
       prologo: "Algunas veces Martina siente que la tratan diferente y no entiende cuál es la razón. Conociendo otras realidades, como la de Martina, es que aprendemos a respetar y a valorar la diversidad. Celebrar las diferencias en los demás, es también aceptar las propias. ¡Lo mismo que te hace diferente, te hace insuperable!",
     },
     {
@@ -14,7 +14,7 @@ let products = {
       categoria: "Infantil",
       codigo: "IZCGR2018",
       portada:
-        "https://p.calameoassets.com/171031124756-99ca4d4aafd77325f03b1bce8c5e0d6f/p1.jpg",
+        "IZCGR2018.webp",
       prologo: "Este es el cuento sobre como dos hermanitos cambian la historia de un pueblo. Se les ocurre una idea que se vuelve la nueva tradicción del lugar. Ponerse en los zapatos del otro es comprender, respetar y valorar la diversidad. Y eso también sirve para que puedas aceptarte a ti mismo. ¡Lo mismo que te hace diferente, te hace insuperable!",
     },
     {
@@ -22,7 +22,7 @@ let products = {
       categoria: "Infantil",
       codigo: "INTDPME2019",
       portada:
-        "https://cdn.edelvives.es/docs/catalogo/15890/imgs/original/165015_Cub_DosPadres_Ev_web.jpg",
+        "INTDPME2019.webp",
       prologo: "Berta está emocionada con Matilda, la niña nueva que ha llegado a su colegio; ¡es igualita a ella! Solo se diferencian en una cosa: Matilda tiene dos papás. Berta está deseando conocerlos, ¡seguro que en su casa todo es muy diferente!",
     },
     {
@@ -30,7 +30,7 @@ let products = {
       categoria: "Infantil",
       codigo: "IVMLMMDS2016",
       portada:
-        "https://sujetossujetados.files.wordpress.com/2021/01/infancias2-2.jpg",
+        "IVMLMMDS2016.webp",
       prologo: "Una niña llamada Naiat recibe de su madre un vestido que no le gusta, por lo que recorre las casas de sus vecinas y sus amigas buscando ayuda. Las mujeres con las que se encuentra la van decorando con zapatos, un peinado, accesorios y detalles, hasta que, finalmente, siente que tiene «el vestido más lindo del mundo». La niña termina con un vestido que le gusta, repleto de valores y riquezas colectivas, porque encontró contención y apoyo en la gente que la rodea.",
     },
     {
@@ -38,7 +38,7 @@ let products = {
       categoria: "Infantil",
       codigo: "IEVDMDU2011",
       portada:
-        "https://bichuna.uy/wp-content/uploads/2021/08/D_NQ_NP_787221-MLU20737376979_052016-O.jpg",
+        "IEVDMDU2011.webp",
       prologo: "Un niño esta encantado con el vestido verde que su mamá usa para ir a las fiestas. Se imagina otra ropa con esa tela mágica. Un día decide ponerse el vestido sobre su equipo de futbol y sale a jugar con sus amigos. En la plaza se encuentra con que hay algunos códigos que no son tan fáciles de entender. Y todavía tiene que volver a casa con el vestido cubierto de barro…",
     },
     {
@@ -46,55 +46,55 @@ let products = {
       categoria: "Infantil",
       codigo: "ISSPCNFPS2018",
       portada:
-        "https://d3ugyf2ht6aenh.cloudfront.net/stores/968/871/products/susy-shock-antiprincesas-infantil-genero-libro-d_nq_np_819619-mla27329208127_052018-f1-ca0a31b3e6f2b9d2a715586411413093-640-0.jpg",
-      prologo: "Esta es una historia llena de abrazos porque a Susy Shock, la protagonista, la abrazaron desde pequeña en sus múltiples formas de sentir y de pensar. Ella se define como travesti o, mejor dicho, como “trava”. ¿Y qué significa eso? Que eligió ser como siente. Susy nos cuenta su vida y verás qué feliz se siente y qué segura de sí misma. Nuestra Antiprincesa Colibrí nos habla de todas las posibilidades de ser y de soñar. También se repasan las historias de otras colibrís: Lohana Berkins, Diana Sacayán, Marlene Wayar y su amiguita Luana.",
+        "ISSPCNFPS2018.webp",
+      prologo: "Esta es una historia llena de abrazos porque a Susy Shock, la protagonista, la abrazaron desde pequeña en sus múltiples formas de sentir y de pensar. Ella se define como travesti o, mejor dicho, como “trava”. ¿Y qué significa eso? Que eligió ser como siente. Susy nos cuenta su vida y verás qué feliz se siente y qué segura de sí misma. Nuestra Antiprincesa Colibrí nos habla de todas las posibilidades de ser y de soñar.",
     },
     {
       nombreYautor: "Un apartamento en Urano - Paul B. Preciado",
       categoria: "TeoríaQueer",
       codigo: "TUAEUPBP2019",
       portada:
-        "https://www.anagrama-ed.es/uploads/media/portadas/0001/22/affbabbd74d2a78553ffbb52be993772f34bb972.jpeg",
-      prologo: "",
+        "TUAEUPBP2019.webp",
+      prologo: "Urano, el gigante helado, es el planeta más frío del sistema solar, y también un dios de la mitología griega. Urano da además nombre al uranismo, concepto forjado por el primer activista sexual europeo, Karl-Heinrich Ulrichs, en 1864 para definir el «tercer sexo».",
     },
     {
       nombreYautor: "Testo yonqui - Paul B. Preciado",
       categoria: "TeoríaQueer",
       codigo: "TTYPBP2008",
       portada:
-        "https://www.anagrama-ed.es/uploads/media/portadas/0001/24/112bdd1c1a2b877e3c60a60fce41f3a6f779a971.jpeg",
-      prologo: "",
+        "TTYPBP2008.webp",
+      prologo: "El modelo capitalista actual se asienta en dos pilares fundamentales: la industria farmacéutica y la pornografía. En paralelo al discurso filosófico que analiza esta realidad farmacopornográfica, relata un autoexperimento que le lleva a aplicarse testosterona, para desmentir con él la determinación biólógica del género y la sexualidad.",
     },
     {
       nombreYautor: "Manifiesto contrasexual - Paul B. Preciado",
       categoria: "TeoríaQueer",
       codigo: "TMCPBP2011",
       portada:
-        "https://www.anagrama-ed.es/uploads/media/portadas/0001/24/1d6f47328b01fdb6863fe93631b138318ce0d6d2.jpeg",
-      prologo: "",
+        "TMCPBP2011.webp",
+      prologo: "Provocativa relectura de la sexualidad a través de los trabajos de Deleuze y Foucault, también en la línea del feminismo materialista de Wittig y de las investigaciones sobre el género de Butler y Derrida.",
     },
     {
       nombreYautor: "Pornotopía - Paul B. Preciado",
       categoria: "TeoríaQueer",
       codigo: "TPPBP2010",
       portada:
-        "https://www.arte.unicen.edu.ar/cdab/wp-content/uploads/2021/11/pornotopia-libro.jpeg",
-      prologo: "",
+        "TPPBP2010.webp",
+      prologo: "En plena guerra fría, Hugh Hefner crea la que pronto se convertiría en la revista para adultos más vendida del mundo: Playboy, que no era simplemente una revista de chicas con o sin bikini, sino un vasto proyecto arquitectónico-mediático que tenía como objetivo desplazar la casa heterosexual como núcleo de consumo y reproducción. De la misma manera que la sociedad ilustrada creyó que la celda individual podía ser un enclave de reconstrucción del alma criminal, Playboy confió a la mansión de soltero la fabricación del nuevo hombre moderno.",
     },
     {
       nombreYautor: "Utopía Queer - José E. Muñoz",
       categoria: "TeoríaQueer",
       codigo: "TUQJEM2009",
       portada:
-        "https://www.traficantes.net/sites/default/files/UTOPIA-QUEER_alta.jpg",
-      prologo: "",
+        "TUQJEM2009.webp",
+      prologo: "Cuando el cubano José Esteban Muñoz publicó por primera vez este libro en el año 2009, la imaginación política LGTBIQ se encontraba erosionada por un pragmatismo asfixiante.",
     },
     {
       nombreYautor: "Gays y derecha  - L. Gutierrez y D. Puntigliano ",
       categoria: "Periodístico",
       codigo: "PGYDLGDP2018",
       portada:
-        "https://ladiaria.com.uy/media/photologue/photos/cache/tapa-lento58_700w.png",
+        "PGYDLGDP2018.webp",
       prologo: "",
     },
     {
@@ -109,7 +109,7 @@ let products = {
       categoria: "Entrevistas",
       codigo: "EALIVRDLC1902",
       portada:
-        "https://pmb.parlamento.gub.uy/pmb/opac_css/getimage.php?notice_id=91336",
+        "EALIVRDLC1902.webp",
       prologo: "",
     },
     {
@@ -117,7 +117,8 @@ let products = {
       categoria: "Historia",
       codigo: "HFQEMRB2014",
       portada:
-        "https://d22fxaf9t8d39k.cloudfront.net/98a6c44fdd69019927b1edf24e2361cf8cdb795639a466ac3b79357ed6204c9d63589.jpeg",
+        "HFQEMRB2014.webp",
+      prologo: "Historia de la \"Brigada George Jackson\" y del colectivo gay anticarcelario \"Hombres contra el sexismo\" (1975-1978). Brigada George Jackson aglutinó a anarquistas, comunistas, maricas, bolleras, heterosexuales, gente negra, blanca y de ascendencia nativa."
     },
     {
       nombreYautor:
@@ -125,7 +126,8 @@ let products = {
       categoria: "Biografía",
       codigo: "HATCRMJSR2013",
       portada:
-        "https://www.viruseditorial.net/portadas/accion-travesti-callejera-revolucionaria.png",
+        "HATCRMJSR2013.webp",
+        prologo: "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha gay estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad."
     },
     {
       nombreYautor:
@@ -133,8 +135,8 @@ let products = {
       categoria: "Biografía",
       codigo: "HOWYYDPADOW2019",
       portada:
-        "https://www.polifemo.com/static/img/portadas/_visd_0000JPG02719.jpg",
-      prologo: "",
+        "HOWYYDPADOW2019.webp",
+      prologo: "Oscar Wilde y yo fue publicado en 1914, un año después del proceso. Se trata de un descargo contra la ola de demandas que los admiradores del escritor lanzaron contra Douglas y que no cesarían ni aun después de su muerte.",
     },
     {
       nombreYautor: "Librillo SAT - III Edición  - Montevideo Igualitario",
@@ -169,7 +171,7 @@ let products = {
       categoria: "PolíticaPública",
       codigo: "PBPDSMM2019",
       portada: nohay,
-      prologo: "",
+      prologo: "La última segregación. Baños públicos, moral, género y sexualidad en Uruguay.",
     },
     {
       nombreYautor: "Policlinicas inclusivas - Marcela Schenck",
@@ -258,7 +260,7 @@ for (let i of products.data) {
   name.innerText = i.nombreYautor.toUpperCase();
   container.appendChild(name);
   //codigo
-  let codigo = document.createElement("h6");
+  let codigo = document.createElement("h4");
   codigo.innerText = "#" + i.codigo;
   container.appendChild(codigo);
   card.appendChild(container);

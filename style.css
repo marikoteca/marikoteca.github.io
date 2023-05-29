@@ -40,13 +40,13 @@ a:visited {
   font-size: 24px;
 }
 a:hover {
-  color: #198201;
+  color: #2ca340;
   background-color: transparent;
   text-decoration: none;
   font-size: 24px;
 }
 a:active {
-  color: #198201;
+  color: #2ca340;
   background-color: transparent;
   text-decoration: underline;
   font-size: 24px;
@@ -100,7 +100,7 @@ a:active {
   border: 2px solid #ffffff;
   padding: 1em 2.2em;
   border-radius: 3em;
-  background-color: #198201;
+  background-color: #2ca340;
   color: #ffffff;
   cursor: pointer;
 }

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>Crear Código</title>
+</head>
+
+<body>
+  <h1>Crear Código</h1>
+  <form>
+    <label>Categoría+Nombre del libro+Autor/es+Año</label><br><br>
+    <input type="text" id="datos" name="datos" />
+    <button type="button" onclick="copyNum(crearCodigo(datos.value),document.getElementById('myDiv').style.display='block')">Crear codigo</button>
+  </form>
+  <script>
+        function copyNum() {
+      let copyText = document.querySelector('#codigo');
+      navigator.clipboard.writeText(copyText.innerText); 
+    }
+
+    function crearCodigo(datos) {
+      function capFirstL(string) {
+        let words = string.split(" ");
+        let capitalizedWords = words.map((word) => word[0].toUpperCase());
+        return capitalizedWords.join("");
+      }
+      var data1 = capFirstL(datos)
+      function deleteNumbers(str) {
+        return str.replace(/[0-9]/g, '');
+      }
+      var data2 = deleteNumbers(data1)
+      function getLastNumber(str) {
+        return str.match(/\d+$/)[0];
+      }
+      let codigo = data2 + getLastNumber(datos);
+      document.querySelector('#codigo').innerHTML = codigo;
+
+    }
+  </script>
+  <p>#<span id="codigo"></span></p>
+  <div id="myDiv" style="display:none;"><i>Copiado! 📋</i></div>
+</body>
+
+</html>

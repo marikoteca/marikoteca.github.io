@@ -1,4 +1,8 @@
-let nohay = "NOHAY.png";
+//let nohay = "NOHAY.png";
+
+var arrayNoHay = ["NOHAY.png", "NOHAY1.png","NOHAY2.png","NOHAY3.png","NOHAY4.png","NOHAY5.png",]; 
+var nohay = arrayNoHay[Math.floor(Math.random() * arrayNoHay.length)];
+
 let products = {
   data: [
     {

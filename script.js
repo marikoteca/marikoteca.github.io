@@ -1,6 +1,13 @@
 //let nohay = "NOHAY.png";
 
-var arrayNoHay = ["NOHAY.png", "NOHAY1.png","NOHAY2.png","NOHAY3.png","NOHAY4.png","NOHAY5.png",]; 
+var arrayNoHay = [
+  "NOHAY.png",
+  "NOHAY1.png",
+  "NOHAY2.png",
+  "NOHAY3.png",
+  "NOHAY4.png",
+  "NOHAY5.png",
+];
 var nohay = arrayNoHay[Math.floor(Math.random() * arrayNoHay.length)];
 
 let products = {
@@ -121,7 +128,7 @@ let products = {
       codigo: "HFQEMRB2014",
       portada: "HFQEMRB2014.webp",
       prologo:
-        'Historia de la "Brigada George Jackson" y del colectivo gay anticarcelario "Hombres contra el sexismo" (1975-1978). Brigada George Jackson aglutinó a anarquistas, comunistas, maricas, bolleras, heterosexuales, gente negra, blanca y de ascendencia nativa.',
+        "Historia de la Brigada George Jackson y del colectivo gay anticarcelario Hombres contra el sexismo (1975-1978). Brigada George Jackson aglutinó a anarquistas, comunistas, maricas, bolleras, heterosexuales, gente negra, blanca y de ascendencia nativa.",
     },
     {
       nombreYautor:
@@ -208,7 +215,7 @@ let products = {
     },
     {
       nombreYautor: "Intersecciones - Diego Sempol",
-      categoria: "Teoría",
+      categoria: "TeoríaQueer",
       codigo: "TIDS2019",
       portada: nohay,
       prologo: "",
@@ -234,6 +241,93 @@ let products = {
       codigo: "PDSEUM2014",
       portada: nohay,
       prologo: "",
+    },
+    {
+      nombreYautor: "Señoras ilustres que se empotraron hace mucho - Cristina Domenech",
+      categoria: "Historia",
+      codigo: "HSIQSEHMCD2020",
+      portada: "HSIQSEHMCD2020.webp",
+      prologo: "Poetas como Safo o Emily Dickinson, las artistas Frida Kahlo y Tamara de Lempicka, las literatas sor Juan Inés de la Cruz y Virginia Woolf, una gran diva de Hollywood y hasta una reina de Inglaterra son algunas de las genias que protagonizan el nuevo libro de la académica Cristina Domenech, que cuentaademás con las maravillosas ilustraciones de Medusa Dollmaker. Señoras ilustres es un recorrido fascinante por la vida intelectual y amorosa de estas señoras con un talento desmesurado y una vida con facetas a menudo silenciadas o tergiversadas por la historia.",
+    },
+    {
+      nombreYautor:
+        "Orgullo: 50 héroes. 5 décadas de lucha LGTBI+ - Josema Busto",
+      categoria: "Historia",
+      codigo: "HOHDDLLJB2019",
+      portada: "HOHDDLLJB2019.webp",
+      prologo:
+        "Orgullo, el libro ilustrado que rinde homenaje a los 50 años de lucha LGTBI+ Una mirada a través de 50 personajes que han contribuido a lograr la visibilidad y los derechos del colectivo.",
+    },
+    {
+      nombreYautor: "Queer Zones - Sam Bourcier",
+      categoria: "Historia",
+      codigo: "HQZSB2020",
+      portada: "HQZSB2020.webp",
+      prologo:
+        "Queer Zones reúne los tres volúmenes del mismo nombre publicados entre 2000 y 2011, incluido el ya clásico «Queer Zones. Politique des identités et des savoirs», que impulsó la teoría y la política queer en Francia. A medida que pasan las páginas, la pospornografía emerge junto a exploraciones políticas, teóricas y personales que están renovando el feminismo, los estudios de género y la teoría de género.",
+    },
+    {
+      nombreYautor: "LGBT Victorians - Simon Joyce",
+      categoria: "Historia",
+      codigo: "HLVSJ2022",
+      portada: "HLVSJ2022.webp",
+      prologo:
+        "Lgbt Victorians: Sexualidad y género en los archivos del siglo XIX",
+    },
+    {
+      nombreYautor: "Mounstro Rosa - Olga de Dios",
+      categoria: "Infantil",
+      codigo: "IMRODD2013",
+      portada: "IMRODD2013.webp",
+      prologo:
+        "Monstruo Rosa es un cuento sobre el valor de la diferencia. Una historia para entender la diversidad como elemento enriquecedor de nuestra sociedad.",
+    },
+    {
+      nombreYautor: "Beyand Queer Words - Varies autores",
+      categoria: "Arte",
+      codigo: "ABQWVA2020",
+      portada: "ABQWVA2020.webp",
+      prologo:
+        "En Beyond Queer Words publican una antología de poemas y cuentos queer una vez al año. Las piezas literarias van de la mano con bellas artes visuales.",
+    },
+    {
+      nombreYautor: "Recopilado - Pedro Lemebel",
+      categoria: "Arte",
+      codigo: "ARPL0",
+      portada: nohay,
+      prologo: "",
+    },
+    {
+      nombreYautor:
+        "Un virus de amor - Cecilia Abadie & Margarita García Telesca",
+      categoria: "Biografía",
+      codigo: "BUVDAAMGT2023",
+      portada: "BUVDAAMGT2023.webp",
+      prologo:
+        "Con el shock de la condena a muerte que significaba en los años noventa ser VIH positivo, tras el una infancia y una adolescencia difíciles, Cecilia con sus veinticuatro años decide vivir. Para esto deberá dejar las drogas y atravesar una montaña rusa emocional que la llevará a encontrarse a sí misma.",
+    },
+    {
+      nombreYautor: "Global Gay - Frédéric Martel",
+      categoria: "PoliticaPublica",
+      codigo: "PPGGFM2012",
+      portada: "PPGGFM2012.webp",
+      prologo:
+        "Una investigación sin precedentes alrededor del mundo sobre la cuestión gay. De una esquina a otra del planeta, la revolución gay está en marcha. De la resistencia contra la represión en China, Cuba o Irán al activismo a favor del matrimonio para parejas del mismo sexo en Estados Unidos y en Europa.",
+    },
+    {
+      nombreYautor: "Entre razón y delirio - Camila Mariana Lopez",
+      categoria: "Arte",
+      codigo: "AERYDCML0",
+      portada: nohay,
+      prologo: "",
+    },
+    {
+      nombreYautor: "La mujer gorda - Jimena Márquez",
+      categoria: "Biografía",
+      codigo: "BLMGJM2022",
+      portada: "BLMGJM2022.webp",
+      prologo:
+        "Después de pasajes exitosos por las tablas –desde dirigir a la Comedia Nacional hasta ser figura máxima del carnaval– y habiendo demostrado su habilidad con la pluma en esos menesteres, Jimena Márquez, que ya había publicado algunos de sus libretos teatrales, deja que sus textos (y sus trazos) se defiendan por sí solos. La mujer gorda es, antes que nada, la mujer desnuda. Llora, sabe, gira en la cama, abre las piernas. Autodestructiva y enamorada de sí misma. Está en acción aunque solamente mire hacia adentro, pero siempre con una honesta brutalidad. La misma que irradian las mujeres dibujadas, a veces insinuadas, nunca vestidas.",
     },
   ],
 };
@@ -264,7 +358,7 @@ for (let i of products.data) {
   //product name
   let name = document.createElement("h5");
   name.classList.add("product-name");
-  name.innerText = i.nombreYautor.toUpperCase();
+  name.innerText = i.nombreYautor;//.toUpperCase();
   container.appendChild(name);
   //codigo
   let codigo = document.createElement("h4");

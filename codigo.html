@@ -2,15 +2,19 @@
 
 <head>
   <title>Crear Código</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div id="reserva" id="search-container">
+
   <h1>Crear Código</h1>
   <form>
     <label>Categoría+Nombre del libro+Autor/es+Año</label><br><br>
-    <input type="text" id="datos" name="datos" />
-    <button type="button" onclick="copyNum(crearCodigo(datos.value),document.getElementById('myDiv').style.display='block')">Crear codigo</button>
+    <input class="button-value" type="text" id="datos" name="datos" />
+    <button class="button-reserva"  type="button" onclick="copyNum(crearCodigo(datos.value),document.getElementById('myDiv').style.display='block')">Crear codigo</button>
   </form>
+  </div>
   <script>
         function copyNum() {
       let copyText = document.querySelector('#codigo');
@@ -19,6 +23,7 @@
 
     function crearCodigo(datos) {
       function capFirstL(string) {
+       string = string.replace("	"," ")
         let words = string.split(" ");
         let capitalizedWords = words.map((word) => word[0].toUpperCase());
         return capitalizedWords.join("");

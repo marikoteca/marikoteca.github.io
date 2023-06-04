@@ -1,12 +1,12 @@
 //let nohay = "NOHAY.png";
 
 var arrayNoHay = [
-  "NOHAY.png",
-  "NOHAY1.png",
-  "NOHAY2.png",
-  "NOHAY3.png",
-  "NOHAY4.png",
-  "NOHAY5.png",
+  "nohay (1).svg",
+  "nohay (2).svg",
+  "nohay (3).svg",
+  "nohay (4).svg",
+  "nohay (5).svg",
+  "nohay (6).svg",
 ];
 var nohay = arrayNoHay[Math.floor(Math.random() * arrayNoHay.length)];
 
@@ -108,7 +108,7 @@ let products = {
       nombreYautor: "Entre razón y delirio - Camila Mariana Lopez",
       categoria: "Arte",
       codigo: "AERYDCML0",
-      portada: "AERYDCML0.webp",
+      portada: nohay,
       prologo:
         "Una investigación sin precedentes alrededor del mundo sobre la cuestión gay. De una esquina a otra del planeta, la revolución gay está en marcha. De la resistencia contra la represión en China, Cuba o Irán al activismo a favor del matrimonio para parejas del mismo sexo en Estados Unidos y en Europa.",
     },
@@ -175,7 +175,7 @@ let products = {
       nombreYautor: "La mujer gorda - Jimena Márquez",
       categoria: "Biografía",
       codigo: "BLMGJM2022",
-      portada: nohay,
+      portada: "BLMGJM2022.webp",
       prologo: "",
     },
     {
@@ -270,7 +270,7 @@ let products = {
       nombreYautor: "Recopilado - Pedro Lemebel",
       categoria: "Arte",
       codigo: "ARPL0",
-      portada: "ARPL0.webp",
+      portada: nohay,
       prologo:
         "En Beyond Queer Words publican una antología de poemas y cuentos queer una vez al año. Las piezas literarias van de la mano con bellas artes visuales.",
     },

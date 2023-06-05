@@ -26,7 +26,7 @@ let products = {
       codigo: "HATCRMJSR2013",
       portada: "HATCRMJSR2013.webp",
       prologo:
-        "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos mujeres trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha gay estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad.",
+        "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos mujeres trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha queer estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad.",
     },
     {
       nombreYautor: "Afiches por los derechos LGBTIQ+ - Montevideo Igualitario",
@@ -64,7 +64,7 @@ let products = {
       codigo: "ABQWVA2020",
       portada: "ABQWVA2020.webp",
       prologo:
-        "Después de pasajes exitosos por las tablas –desde dirigir a la Comedia Nacional hasta ser figura máxima del carnaval– y habiendo demostrado su habilidad con la pluma en esos menesteres, Jimena Márquez, que ya había publicado algunos de sus libretos teatrales, deja que sus textos (y sus trazos) se defiendan por sí solos. La mujer gorda es, antes que nada, la mujer desnuda. Llora, sabe, gira en la cama, abre las piernas. Autodestructiva y enamorada de sí misma. Está en acción aunque solamente mire hacia adentro, pero siempre con una honesta brutalidad. La misma que irradian las mujeres dibujadas, a veces insinuadas, nunca vestidas.",
+        "En Beyond Queer Words publican una antología de poemas y cuentos queer una vez al año. Las piezas literarias van de la mano con bellas artes visuales.",
     },
     {
       nombreYautor: "De silencios y otras violencias - MIDES",
@@ -109,8 +109,7 @@ let products = {
       categoria: "Arte",
       codigo: "AERYDCML0",
       portada: nohay,
-      prologo:
-        "Una investigación sin precedentes alrededor del mundo sobre la cuestión gay. De una esquina a otra del planeta, la revolución gay está en marcha. De la resistencia contra la represión en China, Cuba o Irán al activismo a favor del matrimonio para parejas del mismo sexo en Estados Unidos y en Europa.",
+      prologo: "",
     },
     {
       nombreYautor: "Espacios Públicos - Valentina Torre",
@@ -176,7 +175,8 @@ let products = {
       categoria: "Biografía",
       codigo: "BLMGJM2022",
       portada: "BLMGJM2022.webp",
-      prologo: "",
+      prologo:
+        "Después de pasajes exitosos por las tablas –desde dirigir a la Comedia Nacional hasta ser figura máxima del carnaval– y habiendo demostrado su habilidad con la pluma en esos menesteres, Jimena Márquez, que ya había publicado algunos de sus libretos teatrales, deja que sus textos (y sus trazos) se defiendan por sí solos. La mujer gorda es, antes que nada, la mujer desnuda. Llora, sabe, gira en la cama, abre las piernas. Autodestructiva y enamorada de sí misma. Está en acción aunque solamente mire hacia adentro, pero siempre con una honesta brutalidad. La misma que irradian las mujeres dibujadas, a veces insinuadas, nunca vestidas.",
     },
     {
       nombreYautor: "La niña que no veían - Gaston Rosa",
@@ -313,7 +313,8 @@ let products = {
       categoria: "Biografía",
       codigo: "BUVDAAMGT2023",
       portada: nohay,
-      prologo: "",
+      prologo:
+        "Con el shock de la condena a muerte que significaba en los años noventa ser VIH positivo, tras el una infancia y una adolescencia difíciles, Cecilia con sus veinticuatro años decide vivir. Para esto deberá dejar las drogas y atravesar una montaña rusa emocional que la llevará a encontrarse a sí misma.",
     },
     {
       nombreYautor: "Utopía Queer - José E. Muñoz",
@@ -330,7 +331,7 @@ let products = {
       portada: "IZCGR2018.webp",
       prologo:
         "Este es el cuento sobre como dos hermanitos cambian la historia de un pueblo. Se les ocurre una idea que se vuelve la nueva tradicción del lugar. Ponerse en los zapatos del otro es comprender, respetar y valorar la diversidad. Y eso también sirve para que puedas aceptarte a ti mismo. ¡Lo mismo que te hace diferente, te hace insuperable!",
-    }, 
+    },
   ],
 };
 
@@ -367,8 +368,8 @@ for (let i of products.data) {
   codigo.innerText = "#" + i.codigo;
   container.appendChild(codigo);
   card.appendChild(container);
-  codigo.addEventListener("click", function(){
-    const el = document.createElement('textarea');
+  codigo.addEventListener("click", function () {
+    const el = document.createElement("textarea");
     el.value = i.codigo;
     document.body.appendChild(el);
     el.select();

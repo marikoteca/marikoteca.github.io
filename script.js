@@ -375,7 +375,16 @@ for (let i of products.data) {
     document.execCommand("copy");
     document.body.removeChild(el);
     alert("Código copiado 📋");
-  })
+  });
+  codigo.addEventListener("touchstart", function(){
+    const el = document.createElement('textarea');
+    el.value = i.codigo;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    alert("Código copiado 📋");
+  });
   //prologo
   let prologoClicked = false;
   let prologo = document.createElement("h7");

@@ -367,6 +367,15 @@ for (let i of products.data) {
   codigo.innerText = "#" + i.codigo;
   container.appendChild(codigo);
   card.appendChild(container);
+  codigo.addEventListener("click", function(){
+    const el = document.createElement('textarea');
+    el.value = i.codigo;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    alert("Código copiado 📋");
+  })
   //prologo
   let prologoClicked = false;
   let prologo = document.createElement("h7");

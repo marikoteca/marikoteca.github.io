@@ -26,7 +26,7 @@ let products = {
       codigo: "HATCRMJSR2013",
       portada: "HATCRMJSR2013.webp",
       prologo:
-        "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha gay estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad.",
+        "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos mujeres trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha gay estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad.",
     },
     {
       nombreYautor: "Afiches por los derechos LGBTIQ+ - Montevideo Igualitario",
@@ -369,13 +369,17 @@ for (let i of products.data) {
   card.appendChild(container);
   //prologo
   let prologoClicked = false;
-  let prologo = document.createElement("h6");
+  let prologo = document.createElement("h7");
   name.classList.add("product-description");
   prologo.innerText = "Leer prólogo +";
   prologo.addEventListener("click", () => {
     if (!prologoClicked) {
       let prologo = document.createElement("h6");
-      prologo.innerText = i.prologo;
+      if (i.prologo === "") {
+        prologo.innerText = "Prólogo no disponible ☹️";
+      } else {
+        prologo.innerText = i.prologo;
+      }
       container.appendChild(prologo);
       card.appendChild(container);
       prologoClicked = true;

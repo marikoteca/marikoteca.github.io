@@ -7,7 +7,9 @@
   <title>Marikoteca FDD 🏳️‍🌈</title>
   <!-- Google Font -->
   <!--link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /-->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Karla:wght@400;500&family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Karla:wght@400;500&family=Montserrat:wght@100;300&display=swap"
+    rel="stylesheet">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
   <!--style>
@@ -38,22 +40,44 @@
         🔎</button>
     </div>
     <div id="buttons">
-      <!--button class="button-value" onclick="filterProduct('all')">Todos</button-->
-      <button class="button-value" onclick="filterProduct('Infantil')">Infantil</button>
-      <button class="button-value" onclick="filterProduct('TeoríaQueer')">Teoría Queer</button>
-      <button class="button-value" onclick="filterProduct('Periodístico')">Periodístico</button>
+      <button class="button-value" onclick="filterProduct('all')">Todos</button>
+      <button class="button-value" onclick="filterProduct('Arte')">Arte</button>
+      <button class="button-value" onclick="filterProduct('Biografía')">Biografía</button>
       <button class="button-value" onclick="filterProduct('Entrevistas')">Entrevistas</button>
       <button class="button-value" onclick="filterProduct('Historia')">Historia</button>
-      <button class="button-value" onclick="filterProduct('Biografía')">Biografía</button>
-      <button class="button-value" onclick="filterProduct('Arte')">Arte</button>
+      <button class="button-value" onclick="filterProduct('Infantil')">Infantil</button>
+      <button class="button-value" onclick="filterProduct('Periodístico')">Periodístico</button>
       <button class="button-value" onclick="filterProduct('PolíticaPública')">Política Pública</button>
+      <button class="button-value" onclick="filterProduct('TeoríaQueer')">Teoría Queer</button>
       <button class="button-value" onclick="filterProduct('Otros')">Otros</button>
     </div>
-    <div id="reserva">
+    <!--div id="reserva">
       <p>&nbsp;</p>
       <form target="_blank" action="https://forms.gle/iqrjsqS9PaMAPtJb9">
         <input class="button-reserva" style="background-color:'${funcionColor()}'"  type="submit" value="Para leer o reservar un libro, click acá 👆📚" />
       </form>
+    </div-->
+    <div id="reserva">
+      <p>&nbsp;</p>
+      <button id="clickme" class="button-reserva" type="submit">Para leer o reservar un libro, click acá 👆📚</button>
+      <p>&nbsp;</p>
+      <iframe src="https://forms.gle/iqrjsqS9PaMAPtJb9" width="100%" height="300px" style="display:none;"
+        id="my-iframe"></iframe>
+      <script>
+        let reservaBtn = document.getElementById("clickme");
+        let isOpen = false;
+        document.getElementById("clickme").onclick = function () {
+          let iframe = document.getElementById("my-iframe");
+          iframe.style.display == "none" ? iframe.style.display = "block" : iframe.style.display = "none";
+          if (!isOpen) {
+            reservaBtn.innerHTML = "Cerrar";
+            isOpen = true;
+          } else {
+            reservaBtn.innerHTML = "Para leer o reservar un libro, click acá 👆📚";
+            isOpen = false;
+          }
+        }
+      </script>
     </div>
     <div id="products"></div>
   </div>

@@ -361,7 +361,7 @@ for (let i of products.data) {
   //product name
   let name = document.createElement("h5");
   name.classList.add("product-name");
-  name.innerText = i.nombreYautor; //.toUpperCase();
+  name.innerText = i.nombreYautor.toUpperCase();
   container.appendChild(name);
   //codigo
   let codigo = document.createElement("h4");

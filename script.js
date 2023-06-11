@@ -10,7 +10,7 @@ var arrayNoHay = [
 ];
 var nohay = arrayNoHay[Math.floor(Math.random() * arrayNoHay.length)];
 
-let products = {
+let items = {
   data: [
     {
       nombreYautor: "3er Plan de Igualidad de Genero ('17-'20) - IMM",
@@ -112,6 +112,14 @@ let products = {
       prologo: "",
     },
     {
+      nombreYautor: "ESI: Talleres De Cuerpo En Juego - Mariana Páez",
+      categoria: "PolíticaPública",
+      codigo: "PETDCEJMP2022",
+      portada: "PETDCEJMP2022.webp",
+      prologo:
+        "La ESI llega a decirnos que la sexualidad es un territorio de transformación, descubrimientos, desmitificación, contradicciones, expansión, derechos. Sin embargo, lo hace en la escuela, un lugar donde la energía emancipatoría convive con la energía del disciplinamiento y la reproducción. La invitación es a preguntarnos: ¿Qué especificidades tiene la forma de trabajar ESI en el territorio escolar? Como anticipo: vemos en la potencia que despierta el juego una fisura por donde entrar a las dimensiones del cuerpo, la subjetividad y la sexualidad que habitan la escuela y se muestran, especialmente, en los talleres de educación sexual integral.",
+    },
+    {
       nombreYautor: "Espacios Públicos - Valentina Torre",
       categoria: "PolíticaPública",
       codigo: "PEPVT2019",
@@ -149,7 +157,7 @@ let products = {
         "Con el shock de la condena a muerte que significaba en los años noventa ser VIH positivo, tras el una infancia y una adolescencia difíciles, Cecilia con sus veinticuatro años decide vivir. Para esto deberá dejar las drogas y atravesar una montaña rusa emocional que la llevará a encontrarse a sí misma.",
     },
     {
-      nombreYautor: "Incorrecta - Varies",
+      nombreYautor: "Incorrecta - Varies autores",
       categoria: "Periodístico",
       codigo: "PIV2016",
       portada: nohay,
@@ -335,6 +343,9 @@ let products = {
   ],
 };
 
+//Ordenar items
+items.data.sort((a,b) => (a.nombreYautor < b.nombreYautor) ? -1 : 1);
+
 //Funcionamiento
 document.getElementById("search-input").addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
@@ -342,7 +353,7 @@ document.getElementById("search-input").addEventListener("keyup", (event) => {
   }
 });
 
-for (let i of products.data) {
+for (let i of items.data) {
   //Create Card
   let card = document.createElement("div");
   //Card should have categoria and should stay hidden initially
@@ -404,7 +415,7 @@ for (let i of products.data) {
     prologo.style.cursor = "pointer";
   });
   //
-  document.getElementById("products").appendChild(card);
+  document.getElementById("items").appendChild(card);
 }
 
 //parameter passed from button (Parameter same as categoria)
@@ -458,7 +469,7 @@ document.getElementById("search").addEventListener("click", () => {
   });
 });
 
-//Initially display all products
+//Initially display all items
 window.onload = () => {
   filterProduct("all");
 };

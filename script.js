@@ -1,12 +1,15 @@
 //let nohay = "NOHAY.png";
 
 var arrayNoHay = [
-  "nohay (1).svg",
-  "nohay (2).svg",
-  "nohay (3).svg",
-  "nohay (4).svg",
-  "nohay (5).svg",
-  "nohay (6).svg",
+  "svg/nohay (1).svg",
+  "svg/nohay (2).svg",
+  "svg/nohay (3).svg",
+  "svg/nohay (4).svg",
+  "svg/nohay (5).svg",
+  "svg/nohay (6).svg",
+  "svg/nohay (7).svg",
+  "svg/nohay (8).svg",
+  "svg/nohay (9).svg",
 ];
 var nohay = arrayNoHay[Math.floor(Math.random() * arrayNoHay.length)];
 
@@ -19,7 +22,7 @@ let items = {
 { nombreYautor: "Baños Publicos - D. Sempol y M. Montano", categoria: "PolíticaPública", codigo: "BPXDS", portada: nohay, prologo: "La última segregación. Baños públicos, moral, género y sexualidad en Uruguay." }, 
 { nombreYautor: "Beyand Queer Words - Varies autores", categoria: "Arte", codigo: "BQWVA", portada: "BQWVA.webp", prologo: "En Beyond Queer Words publican una antología de poemas y cuentos queer una vez al año. Las piezas literarias van de la mano con bellas artes visuales." }, 
 { nombreYautor: "De silencios y otras violencias - MIDES", categoria: "PolíticaPública", codigo: "DSYMX", portada: nohay, prologo: "" }, 
-{ nombreYautor: "Dialogo con la diversidad religiosa - S. Kreher y N. Scheider", categoria: "PolíticaPública", codigo: "DCLSK", portada: nohay, prologo: "" }, 
+{ nombreYautor: "Diálogo con la diversidad religiosa - S. Kreher y N. Scheider", categoria: "PolíticaPública", codigo: "DCLSK", portada: nohay, prologo: "" }, 
 { nombreYautor: "Diversidad Sexual en Uruguay - MIDES", categoria: "PolíticaPública", codigo: "DSEMX", portada: nohay, prologo: "" }, 
 { nombreYautor: "El vestido de mamá  - Dani Umpi", categoria: "Infantil", codigo: "EVDDU", portada: "EVDDU.webp", prologo: "Un niño esta encantado con el vestido verde que su mamá usa para ir a las fiestas. Se imagina otra ropa con esa tela mágica. Un día decide ponerse el vestido sobre su equipo de futbol y sale a jugar con sus amigos. En la plaza se encuentra con que hay algunos códigos que no son tan fáciles de entender. Y todavía tiene que volver a casa con el vestido cubierto de barro…" }, 
 { nombreYautor: "El vestido más lindo del mundo - Monica dos Santos", categoria: "Infantil", codigo: "EVMMD", portada: "EVMMD.webp", prologo: "Una niña llamada Naiat recibe de su madre un vestido que no le gusta, por lo que recorre las casas de sus vecinas y sus amigas buscando ayuda. Las mujeres con las que se encuentra la van decorando con zapatos, un peinado, accesorios y detalles, hasta que, finalmente, siente que tiene «el vestido más lindo del mundo». La niña termina con un vestido que le gusta, repleto de valores y riquezas colectivas, porque encontró contención y apoyo en la gente que la rodea." }, 

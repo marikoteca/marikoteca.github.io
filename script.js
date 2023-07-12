@@ -1,25 +1,24 @@
 //let nohay = "NOHAY.png";
 
 var arrayNoHay = [
-  "svg/nohay (1).svg",
-  "svg/nohay (2).svg",
-  "svg/nohay (3).svg",
-  "svg/nohay (4).svg",
-  "svg/nohay (5).svg",
-  "svg/nohay (6).svg",
-  "svg/nohay (7).svg",
-  "svg/nohay (8).svg",
-  "svg/nohay (9).svg",
+  "nohay (1).svg",
+  "nohay (2).svg",
+  "nohay (3).svg",
+  "nohay (4).svg",
+  "nohay (5).svg",
+  "nohay (6).svg",
+  "nohay (7).svg",
+  "nohay (8).svg",
+  "nohay (9).svg",
 ];
 var nohay = arrayNoHay[Math.floor(Math.random() * arrayNoHay.length)];
 
 let items = {
-  data: [
-    { nombreYautor: "Acción Travesti Callejera Revolucionaria - Marsha Johnson y Sylvia Rivera", categoria: "Historia", codigo: "ATCMJ", portada: "ATCMJ.webp", prologo: "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos mujeres trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha queer estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad." }, 
+  data: [{ nombreYautor: "Acción Travesti Callejera Revolucionaria - Marsha Johnson y Sylvia Rivera", categoria: "Historia", codigo: "ATCMJ", portada: "ATCMJ.webp", prologo: "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos mujeres trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha queer estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad." }, 
 { nombreYautor: "Afiches por los derechos LGBTIQ+ - Montevideo Igualitario", categoria: "Arte", codigo: "APLMI", portada: nohay, prologo: "" }, 
 { nombreYautor: "Amor libre: Interviews voluptuosos - Roberto de las Carreras", categoria: "Entrevistas", codigo: "ALIRD", portada: "ALIRD.webp", prologo: "" }, 
 { nombreYautor: "Arte Trans - M. Percovich y L. De Sosa", categoria: "Arte", codigo: "ATXMP", portada: nohay, prologo: "" }, 
-{ nombreYautor: "Baños Publicos - D. Sempol y M. Montano", categoria: "PolíticaPública", codigo: "BPXDS", portada: nohay, prologo: "La última segregación. Baños públicos, moral, género y sexualidad en Uruguay." }, 
+{ nombreYautor: "Baños Públicos - D. Sempol y M. Montano", categoria: "PolíticaPública", codigo: "BPXDS", portada: nohay, prologo: "La última segregación. Baños públicos, moral, género y sexualidad en Uruguay." }, 
 { nombreYautor: "Beyand Queer Words - Varies autores", categoria: "Arte", codigo: "BQWVA", portada: "BQWVA.webp", prologo: "En Beyond Queer Words publican una antología de poemas y cuentos queer una vez al año. Las piezas literarias van de la mano con bellas artes visuales." }, 
 { nombreYautor: "De silencios y otras violencias - MIDES", categoria: "PolíticaPública", codigo: "DSYMX", portada: nohay, prologo: "" }, 
 { nombreYautor: "Diálogo con la diversidad religiosa - S. Kreher y N. Scheider", categoria: "PolíticaPública", codigo: "DCLSK", portada: nohay, prologo: "" }, 
@@ -32,13 +31,14 @@ let items = {
 { nombreYautor: "Fuego Queer - Ed Mead y Rita Brown", categoria: "Historia", codigo: "FQXEM", portada: "FQXEM.webp", prologo: "Historia de la Brigada George Jackson y del colectivo gay anticarcelario Hombres contra el sexismo (1975-1978). Brigada George Jackson aglutinó a anarquistas, comunistas, maricas, bolleras, heterosexuales, gente negra, blanca y de ascendencia nativa." }, 
 { nombreYautor: "Futuro: Miradas Latinoamericanas - Marcela Schenck", categoria: "PolíticaPública", codigo: "FMLMS", portada: nohay, prologo: "" }, 
 { nombreYautor: "Gays y derecha  - L. Gutierrez y D. Puntigliano ", categoria: "Periodístico", codigo: "GYDLG", portada: "GYDLG.webp", prologo: "" }, 
-{ nombreYautor: "Global Gay - Frédéric Martel", categoria: "PolíticaPública", codigo: "GGXFM", portada: "GGXFM.webp", prologo: "Con el shock de la condena a muerte que significaba en los años noventa ser VIH positivo, tras el una infancia y una adolescencia difíciles, Cecilia con sus veinticuatro años decide vivir. Para esto deberá dejar las drogas y atravesar una montaña rusa emocional que la llevará a encontrarse a sí misma." }, 
+{ nombreYautor: "Global Gay - Frédéric Martel", categoria: "PolíticaPública", codigo: "GGXFM", portada: "GGXFM.webp", prologo: "Urano, el gigante helado, es el planeta más frío del sistema solar, y también un dios de la mitología griega. Urano da además nombre al uranismo, concepto forjado por el primer activista sexual europeo, Karl-Heinrich Ulrichs, en 1864 para definir el «tercer sexo»." }, 
 { nombreYautor: "Incorrecta - Varies autores", categoria: "Periodístico", codigo: "IXXVA", portada: nohay, prologo: "" }, 
 { nombreYautor: "Interseccionalidad en las politicas LGBTI - G. Coll, R. Solà y M. Missé", categoria: "PolíticaPública", codigo: "IELGC", portada: nohay, prologo: "" }, 
 { nombreYautor: "Intersecciones - Diego Sempol", categoria: "TeoríaQueer", codigo: "IXXDS", portada: nohay, prologo: "" }, 
 { nombreYautor: "La mujer gorda - Jimena Márquez", categoria: "Biografía", codigo: "LMGJM", portada: "LMGJM.webp", prologo: "Después de pasajes exitosos por las tablas –desde dirigir a la Comedia Nacional hasta ser figura máxima del carnaval– y habiendo demostrado su habilidad con la pluma en esos menesteres, Jimena Márquez, que ya había publicado algunos de sus libretos teatrales, deja que sus textos (y sus trazos) se defiendan por sí solos. La mujer gorda es, antes que nada, la mujer desnuda. Llora, sabe, gira en la cama, abre las piernas. Autodestructiva y enamorada de sí misma. Está en acción aunque solamente mire hacia adentro, pero siempre con una honesta brutalidad. La misma que irradian las mujeres dibujadas, a veces insinuadas, nunca vestidas." }, 
 { nombreYautor: "La niña que no veían - Gaston Rosa", categoria: "Infantil", codigo: "LNQGR", portada: "LNQGR.webp", prologo: "Algunas veces Martina siente que la tratan diferente y no entiende cuál es la razón. Conociendo otras realidades, como la de Martina, es que aprendemos a respetar y a valorar la diversidad. Celebrar las diferencias en los demás, es también aceptar las propias. ¡Lo mismo que te hace diferente, te hace insuperable!" }, 
 { nombreYautor: "La niña que tenía dos papás - Mel Elliott", categoria: "Infantil", codigo: "LNQME", portada: "LNQME.webp", prologo: "Berta está emocionada con Matilda, la niña nueva que ha llegado a su colegio; ¡es igualita a ella! Solo se diferencian en una cosa: Matilda tiene dos papás. Berta está deseando conocerlos, ¡seguro que en su casa todo es muy diferente!" }, 
+{ nombreYautor: "Las Aventuras de Ruli - GEDUCA", categoria: "Infantil", codigo: "LADGX", portada: "LADGX.webp", prologo: "Las aventuras de Ruli es un cuento infantil dirigido a niños y niñas de 6 a 11 años en el que a partir de los relatos de la curiosa Ruli se promueven relaciones libres de violencia, las deconstrucciones de estereotipos y roles de género y el empoderamiento de la niñez." }, 
 { nombreYautor: "LGBT Victorians - Simon Joyce", categoria: "Historia", codigo: "LVXSJ", portada: "LVXSJ.webp", prologo: "Lgbt Victorians: Sexualidad y género en los archivos del siglo XIX" }, 
 { nombreYautor: "Librillo SAT - III Edición  - Montevideo Igualitario", categoria: "Arte", codigo: "LS-MI", portada: nohay, prologo: "" }, 
 { nombreYautor: "Manifiesto contrasexual - Paul B. Preciado", categoria: "TeoríaQueer", codigo: "MCXPB", portada: "MCXPB.webp", prologo: "Provocativa relectura de la sexualidad a través de los trabajos de Deleuze y Foucault, también en la línea del feminismo materialista de Wittig y de las investigaciones sobre el género de Butler y Derrida." }, 
@@ -56,8 +56,7 @@ let items = {
 { nombreYautor: "Un virus de amor - Cecilia Abadie & Margarita García Telesca", categoria: "Biografía", codigo: "UVDCA", portada: "UVDCA.webp", prologo: "Con el shock de la condena a muerte que significaba en los años noventa ser VIH positivo, tras el una infancia y una adolescencia difíciles, Cecilia con sus veinticuatro años decide vivir. Para esto deberá dejar las drogas y atravesar una montaña rusa emocional que la llevará a encontrarse a sí misma." }, 
 { nombreYautor: "Utopía Queer - José E. Muñoz", categoria: "TeoríaQueer", codigo: "UQXJE", portada: "UQXJE.webp", prologo: "Cuando el cubano José Esteban Muñoz publicó por primera vez este libro en el año 2009, la imaginación política LGTBIQ se encontraba erosionada por un pragmatismo asfixiante." }, 
 { nombreYautor: "Zapatos cambiados  - Gaston Rosa", categoria: "Infantil", codigo: "ZCXGR", portada: "ZCXGR.webp", prologo: "Este es el cuento sobre como dos hermanitos cambian la historia de un pueblo. Se les ocurre una idea que se vuelve la nueva tradicción del lugar. Ponerse en los zapatos del otro es comprender, respetar y valorar la diversidad. Y eso también sirve para que puedas aceptarte a ti mismo. ¡Lo mismo que te hace diferente, te hace insuperable!" }, 
-{ nombreYautor: "3er Plan de Igualidad de Genero ('17-'20) - IMM", categoria: "PolíticaPública", codigo: "3PDIX", portada: nohay, prologo: "" }, 
-   ],
+{ nombreYautor: "3er Plan de Igualidad de Genero ('17-'20) - IMM", categoria: "PolíticaPública", codigo: "3PDIX", portada: nohay, prologo: "" }, ],
 };
 
 //Ordenar items

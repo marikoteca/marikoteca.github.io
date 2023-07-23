@@ -5,71 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="favicon.svg">
   <title>Marikoteca Física FDD</title>
-  <!-- Google Font -->
-  <!--link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Karla:wght@400;500&family=Montserrat:wght@100;300&display=swap"
-    rel="stylesheet">
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- iconos de redes sociales -->
-  <div style="position:absolute; top:0; right:0; padding:2em  ;">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--a href="https://wa.me/" class="fa fa-whatsapp" target="_blank" style="margin: 10px;"></a-->
-    <a href="https://www.instagram.com/fdd_uy/" class="fa fa-instagram" target="_blank" style="margin: 10px;"></a>
-    <a href="mailto:espaciofdd@gmail.com" class="fa fa-envelope-o" target="_blank" style="margin: 10px;"></a>
+  <img id="logoheader" src="logo.svg"/>
+  <div id="search-container">
+    <input type="search" id="search-input" placeholder="Búsqueda (respetando tildes)" />
+    <button id="search">Buscar 🔎</button>
   </div>
-  <div id="at-header">
-    <img class="image" id="logo" src="logo.svg" style="width: 50%;"/>
+  <div id="buttons">
+    <button class="button-value" onclick="filterProduct('all')">Todos</button>
+    <button class="button-value" onclick="filterProduct('amorlibre')">Amor libre</button>
+    <button class="button-value" onclick="filterProduct('biologia')">Biología</button>
+    <button class="button-value" onclick="filterProduct('historia')">Historia</button>
+    <button class="button-value" onclick="filterProduct('infantil')">Infantil</button>
+    <button class="button-value" onclick="filterProduct('narrativa')">Narrativa</button>
+    <button class="button-value" onclick="filterProduct('periodistico')">Periodístico</button>
+    <button class="button-value" onclick="filterProduct('poesia')">Poesía</button>
+    <button class="button-value" onclick="filterProduct('politicaspublicas')">Políticas públicas</button>
+    <button class="button-value" onclick="filterProduct('teoriaqueer')">Teoría queer</button>
+    <button class="button-value" onclick="filterProduct('otros')">Otros</button>
   </div>
-  <!-- cuerpo de la pagina -->
-  <div class="wrapper">
-    <div style="margin-top: 1em;" id="search-container">
-      <input type="s" id="search-input" placeholder="Búsqueda (respetando tildes)" />
-      <button id="search" style="cursor:pointer;" onmouseover="this.style.cursor='pointer'">Buscar 🔎</button>
-    </div>
-    <div id="buttons">
-      <button class="button-value" onclick="filterProduct('all')">Todos</button>
-      <button class="button-value" onclick="filterProduct('Arte')">Arte</button>
-      <button class="button-value" onclick="filterProduct('Biografía')">Biografía</button>
-      <button class="button-value" onclick="filterProduct('Entrevistas')">Entrevistas</button>
-      <button class="button-value" onclick="filterProduct('Historia')">Historia</button>
-      <button class="button-value" onclick="filterProduct('Infantil')">Infantil</button>
-      <button class="button-value" onclick="filterProduct('Periodístico')">Periodístico</button>
-      <button class="button-value" onclick="filterProduct('PolíticaPública')">Política Pública</button>
-      <button class="button-value" onclick="filterProduct('TeoríaQueer')">Teoría Queer</button>
-      <button class="button-value" onclick="filterProduct('Otros')">Otros</button>
-    </div>
-    <!--div id="reserva">
-      <p>&nbsp;</p>
-      <form target="_blank" action="https://forms.gle/iqrjsqS9PaMAPtJb9">
-        <input class="button-standard" style="background-color:'${funcionColor()}'"  type="submit" value="Para leer o reservar un libro, click acá 👆📚" />
-      </form>
-    </div-->
-    <div id="reserva">
-      <button id="clickme" class="button-standard" type="submit">Para leer o reservar un libro, click acá 👆📚</button>
-      <iframe src="https://forms.gle/iqrjsqS9PaMAPtJb9" width="100%" height="300px" style="display:none;"
-        id="my-iframe"></iframe>
-      <script>
-        let reservaBtn = document.getElementById("clickme");
-        let isOpen = false;
-        document.getElementById("clickme").onclick = function () {
-          let iframe = document.getElementById("my-iframe");
-          iframe.style.display == "none" ? iframe.style.display = "block" : iframe.style.display = "none";
-          if (!isOpen) {
-            reservaBtn.innerHTML = "Cerrar";
-            isOpen = true;
-          } else {
-            reservaBtn.innerHTML = "Para leer o reservar un libro, click acá 👆📚";
-            isOpen = false;
-          }
+  <div id="reserva">
+    <button id="clickme" class="button-standard" type="submit">Para leer o reservar un libro, click acá 👆📚</button>
+    <iframe src="https://forms.gle/iqrjsqS9PaMAPtJb9" width="100%" height="300px" style="display:none;" id="my-iframe"></iframe>
+    <script>
+      let reservaBtn = document.getElementById("clickme");
+      let isOpen = false;
+      document.getElementById("clickme").onclick = function () {
+        let iframe = document.getElementById("my-iframe");
+        iframe.style.display == "none" ? iframe.style.display = "block" : iframe.style.display = "none";
+        if (!isOpen) {
+          reservaBtn.innerHTML = "Cerrar";
+          isOpen = true;
+        } else {
+          reservaBtn.innerHTML = "Para leer o reservar un libro, click acá 👆📚";
+          isOpen = false;
         }
-      </script>
-    </div>
-    <div id="items"></div>
+      }
+    </script>
+  </div>
+  <div id="items"></div>
+  <!-- iconos de redes sociales -->
+  <div id="redes">
+    <a href="https://www.instagram.com/fdd_uy/" class="fa fa-instagram" target="_blank"></a>
+    <a href="mailto:espaciofdd@gmail.com" class="fa fa-envelope-o" target="_blank"></a>
   </div>
   <!-- Script -->
   <script src="script.js"></script>

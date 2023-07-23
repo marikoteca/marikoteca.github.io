@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Karla:wght@400;500&family=Montserrat:wght@100;300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*scroll*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b0b0b0;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2ca340;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,25 +26,30 @@
 }
 
 body {
-  background-color: #eeeeee;
-  align-content: center;
-}
-
-#at-header {
-  text-align: left;
-  margin: 2em 0em 0em 2em;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 4%;
 }
 
 img {
   pointer-events: none;
   user-select: none;
 }
-#logo {
-/*  height: 50px;
-  width: 150px;*/
-  max-width: 60%;
-  height: auto;
-  width: auto\9s; /* ie8 */
+
+#redes {
+  position:absolute; top:0; right:0; padding:2em;
+}
+
+#redes a {
+  margin: 10px;
+}
+
+#redeshome {
+  position: absolute; bottom: 0; right: 0; padding: 2em;
+}
+
+#redeshome a {
+  margin: 10px;
 }
 
 /*urls*/
@@ -69,18 +92,13 @@ a:active {
   height: 100vh;
 }
 
-.wrapper {
-  width: 95%;
-  margin: 0 auto;
-}
-
-#search-container {
-  margin: 1em 0;
+#search {
+  cursor: pointer;
 }
 
 #search-container input {
   background-color: transparent;
-  width: 50%;
+  width: 35%;
   border-bottom: 2px solid #000000;
   padding: 1em 0.3em;
   font-style: italic;
@@ -112,15 +130,6 @@ a:active {
 .active {
   background-color: #1e1e1e;
   color: #ffffff;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .button-home { 
@@ -249,5 +258,50 @@ img {
   #items {
     grid-template-columns: auto;
     grid-column-gap: 1em;
+  }
+}
+
+#logoheader {
+  width: 40%;
+}
+
+
+
+
+#home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  /*            justify-content: center;*/
+  align-items: center;
+  margin: 1em 20% 1em 20%;
+  margin: 0 30 0 30%;
+  padding-top: 3%;
+}
+
+#manif {
+  height: 150px;
+  overflow: scroll;
+  text-align: justify;
+  text-indent: 50px;
+  margin: 3% 30% 3% 30%;
+  font-weight: normal;
+  padding: 0 0.5em 0 0;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #home-grid {
+      display: auto;
+      grid-template-columns: none;
+      gap: none;
+      /*            justify-content: center;*/
+      align-items: center;
+      margin: 1em 20% 1em 20%;
+  }
+
+  #logoheader {
+      width: 65%;
   }
 }

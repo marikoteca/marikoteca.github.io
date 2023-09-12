@@ -337,3 +337,7 @@ img {
     display: unset;
   }
 }
+
+#iframe {
+  display:none;
+}

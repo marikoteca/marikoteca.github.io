@@ -1,18 +1,3 @@
-//let nohay = "NOHAY.png";
-
-var arrayNoHay = [
-  "nohay (1).svg",
-  "nohay (2).svg",
-  "nohay (3).svg",
-  "nohay (4).svg",
-  "nohay (5).svg",
-  "nohay (6).svg",
-  "nohay (7).svg",
-  "nohay (8).svg",
-  "nohay (9).svg",
-];
-var nohay = arrayNoHay[Math.floor(Math.random() * arrayNoHay.length)];
-
 let items = {
   data: [
     { nombreYautor: "Acción Travesti Callejera Revolucionaria - Marsha Johnson y Sylvia Rivera", categoria: "historia", codigo: "ATCMJ", portada: "./img/ATCMJ.webp", prologo: "Recopilación de textos de Marsha P. Johnson y Sylvia Rivera, dos mujeres trans que vivieron en Nueva York en la época de los disturbios de Stonewall, que poco después iniciaron un proyecto autogestionado de apoyo mutuo para la gente trans más marginada, manteniendo un hogar de acogida. Bajo un discurso revolucionario y prácticas de acción directa, estas dos grandes personalidades de la lucha queer estadounidense mostraron una vía de lucha contra el patriarcado que comenzaba por defender a las personas sin diferenciarlas por cuestiones de clase, raza o cómo viven el género y la sexualidad." }, 
@@ -39,7 +24,7 @@ let items = {
 { nombreYautor: "La mujer gorda - Jimena Márquez", categoria: "narrativa", codigo: "LMGJM", portada: "./img/LMGJM.webp", prologo: "Después de pasajes exitosos por las tablas –desde dirigir a la Comedia Nacional hasta ser figura máxima del carnaval– y habiendo demostrado su habilidad con la pluma en esos menesteres, Jimena Márquez, que ya había publicado algunos de sus libretos teatrales, deja que sus textos (y sus trazos) se defiendan por sí solos. La mujer gorda es, antes que nada, la mujer desnuda. Llora, sabe, gira en la cama, abre las piernas. Autodestructiva y enamorada de sí misma. Está en acción aunque solamente mire hacia adentro, pero siempre con una honesta brutalidad. La misma que irradian las mujeres dibujadas, a veces insinuadas, nunca vestidas." }, 
 { nombreYautor: "La niña que no veían - Gaston Rosa", categoria: "infantil", codigo: "LNQGR", portada: "./img/LNQGR.webp", prologo: "Algunas veces Martina siente que la tratan diferente y no entiende cuál es la razón. Conociendo otras realidades, como la de Martina, es que aprendemos a respetar y a valorar la diversidad. Celebrar las diferencias en los demás, es también aceptar las propias. ¡Lo mismo que te hace diferente, te hace insuperable!" }, 
 { nombreYautor: "La niña que tenía dos papás - Mel Elliott", categoria: "infantil", codigo: "LNQME", portada: "./img/LNQME.webp", prologo: "Berta está emocionada con Matilda, la niña nueva que ha llegado a su colegio; ¡es igualita a ella! Solo se diferencian en una cosa: Matilda tiene dos papás. Berta está deseando conocerlos, ¡seguro que en su casa todo es muy diferente!" }, 
-{ nombreYautor: "Las Aventuras de Ruli - GEDUCA", categoria: "infantil", codigo: "LADGX", portada: "./img/LADGX.webp", prologo: "Las aventuras de Ruli es un cuento infantil dirigido a niños y niñas de 6 a 11 años en el que a partir de los relatos de la curiosa Ruli se promueven relaciones libres de violencia, las deconstrucciones de estereotipos y roles de género y el empoderamiento de la niñez." }, 
+{ nombreYautor: "Las Aventuras de Ruli - GEDUCA", categoria: "infantil", codigo: "LADGX", portada: "./img/LADGX.webp", prologo: "https://geducauy.wixsite.com/somosgeduca/ruli  Las aventuras de Ruli es un cuento infantil dirigido a niños y niñas de 6 a 11 años en el que a partir de los relatos de la curiosa Ruli se promueven relaciones libres de violencia, las deconstrucciones de estereotipos y roles de género y el empoderamiento de la niñez." }, 
 { nombreYautor: "LGBT Victorians - Simon Joyce", categoria: "historia", codigo: "LVXSJ", portada: "./img/LVXSJ.webp", prologo: "En Inglés/English | LGBT Victorians argues for re-visiting the period's thinking about gender and sexual identity at a time when our queer alliances are fraying." }, 
 { nombreYautor: "Tercera Edición Semana de Arte Trans - Montevideo Igualitario", categoria: "politicaspublicas", codigo: "TESMI", portada: "./img/TESMI.webp", prologo: "La Semana de Arte Trans es quizá el programa insignia de la Secretaría de la Diversidad de la Intendencia de Montevideo. Apunta a visibilizar a las personas trans y a las miradas no heteronormativas sobre ellas como sujetas del derecho humano a la cultura." }, 
 { nombreYautor: "Manifiesto contrasexual - Paul B. Preciado", categoria: "teoriaqueer", codigo: "MCXPB", portada: "./img/MCXPB.webp", prologo: "Provocativa relectura de la sexualidad a través de los trabajos de Deleuze y Foucault, también en la línea del feminismo materialista de Wittig y de las investigaciones sobre el género de Butler y Derrida." }, 
@@ -69,6 +54,30 @@ let items = {
 { nombreYautor: "Que porquería las hormonas! - Juan Carlos Calvo", categoria: "biologia", codigo: "QPLJC", portada: "./img/QPLJC.webp", prologo: "" }, 
 { nombreYautor: "La construcción del cuarto pilar de la protección social en Uruguay - Junta Nacional de Cuidados", categoria: "politicaspublicas", codigo: "LCDJN", portada: "./img/LCDJN.webp", prologo: "En noviembre de 2015 la mayoría de los partidos políticos uruguayos entendieron que nuestro país debía reconocer los cuidados como un derecho. La aprobación de la Ley de Cuidados (Ley 19.353) significó la cristalización del esfuerzo sostenido de diversos actores del mundo social y académico que instalaron el tema en la agenda pública desde la década de los 90. El Sistema Nacional Integrado de Cuidados (SNIC) comienza a consolidarse como un nuevo pilar de la matriz de protección social de nuestro país, colocando a Uruguay en una posición de privilegio respecto al avance de la agenda de derechos en la región y el mundo. El cuidado es entendido como el conjunto de acciones que la sociedad lleva a cabo para procurar el desarrollo integral y el bienestar cotidiano de quienes se encuentran en situación de dependencia. Los niños y las niñas, las personas mayores y las personas con discapacidad, ambas en situación de dependencia, son las personas que tienen derecho a recibir cuidados de calidad. " }, 
 { nombreYautor: "Segunda Edición Semana de Arte Trans - Montevideo Igualitario", categoria: "politicaspublicas", codigo: "SESMI", portada: "./img/SESMI.webp", prologo: "La Semana de Arte Trans de Montevideo surge como una construcción colectiva que apunta a visibilizar a las personas trans y a las miradas no heteronormativas sobre ellas desde un lugar distinto al esperado: como sujetas del derecho humano a la cultura. " }, 
+{ nombreYautor: "Eligiendonos: Guía en Sexualidad y Género para Adolescentes - Instituto Nacional de las Mujeres", categoria: "biologia", codigo: "EGEIN", portada: "./img/EGEIN.webp", prologo: "(Material antiguo) Desde el Instituto Nacional de las Mujeres del Ministerio de Desarrollo Social (Inmujeres/Mides) entendemos que los derechos sexuales y reproductivos son parte de los derechos humanos fundamentales. Garantizar su ejercicio es entonces un imperativo ético. Con este material que presentamos, queremos contribuir al desarrollo de capacidades que permitan tomar decisiones de manera conciente y responsable. Las ideas que tenemos sobre la sexualidad, los valores que las sustentan, son construcciones históricas y culturales que se vanadaptando a cambios y transformaciones a las que nadie es ajeno/a.  Nos han determinado prohibiciones y permisos distintos si nacimos mujeres o varones y estamos condicionados/as por el entorno social inmediato al que pertenecemos. Escucharnos, conocernos a nosotros/as mismos/as es imprescindible. Esperamos que la guía sea un aporte para vivir y disfrutar plenamente esta dimensión de la vida humana tan hermosa como es la sexualidad sin miedos, sin violencia y sin discriminaciones." }, 
+{ nombreYautor: "Nuestro Tiempo: Cuántos y cómo somos (1) - Juan Jose Calvo e Ignacio Pardo", categoria: "politicaspublicas", codigo: "NTCJJ", portada: "./img/NTCJJ.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Mujeres (2) - Mónica Cardoso", categoria: "politicaspublicas", codigo: "NTMMC", portada: "./img/NTMMC.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Letras (3) - Alfredo Alzugarat", categoria: "politicaspublicas", codigo: "NTLAA", portada: "./img/NTLAA.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Movimientos sociales (4) - Rodolfo Porrini", categoria: "politicaspublicas", codigo: "NTMRP", portada: "./img/NTMRP.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Música (5) - Rubén Olivera y Coriún Aharonián", categoria: "politicaspublicas", codigo: "NTMRO", portada: "./img/NTMRO.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Fútbol y otros deportes (6) - Ricardo Piñeyrúa", categoria: "politicaspublicas", codigo: "NTFRP", portada: "./img/NTFRP.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Artes visuales (7) - Gabriel Peluffo", categoria: "politicaspublicas", codigo: "NTAGP", portada: "./img/NTAGP.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Uruguay en el mundo actual (8) - Gabriel Oddone", categoria: "politicaspublicas", codigo: "NTUGO", portada: "./img/NTUGO.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Costas (9) - Daniel Conde", categoria: "politicaspublicas", codigo: "NTCDC", portada: "./img/NTCDC.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Ciencia y tecnologia (10) - Judith Sutz", categoria: "politicaspublicas", codigo: "NTCJS", portada: "./img/NTCJS.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Carnaval y otras fiestas (11) - Milita Alfaro y Antonio di Candia", categoria: "politicaspublicas", codigo: "NTCMA", portada: "./img/NTCMA.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Migraciones (12) - Adela Pellegrino", categoria: "politicaspublicas", codigo: "NTMAP", portada: "./img/NTMAP.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Cine y medios masivos (13) - Rosalba Oxandabarat y Gabriel Kaplún", categoria: "politicaspublicas", codigo: "NTCRO", portada: "./img/NTCRO.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Vivienda (14) - Jack Couriel y Jorge Menéndez", categoria: "politicaspublicas", codigo: "NTVJC", portada: "./img/NTVJC.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Turismo (15) - Carlos Peña", categoria: "politicaspublicas", codigo: "NTTCP", portada: "./img/NTTCP.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Mundos Rurales (16) - María Inés Moraes", categoria: "politicaspublicas", codigo: "NTMMI", portada: "./img/NTMMI.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Salud (17) - Miguel Fernández Galeano y Wilson Benia", categoria: "politicaspublicas", codigo: "NTSMF", portada: "./img/NTSMF.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Educación (18) - Gerardo Caetano y Gustavo de Armas", categoria: "politicaspublicas", codigo: "NTEGC", portada: "./img/NTEGC.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Iguales y diferentes (20) - Wanda Cabella y Mathias Nathan", categoria: "politicaspublicas", codigo: "NTIWC", portada: "./img/NTIWC.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: El agro (21) - Eduardo Errea y Gonzalo Souto", categoria: "politicaspublicas", codigo: "NTEEE", portada: "./img/NTEEE.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Industria (22) - Raúl lacob", categoria: "politicaspublicas", codigo: "NTIRL", portada: "./img/NTIRL.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Sociedad urbana (23) - Fernando Filgueira y Fernando Errandonea", categoria: "politicaspublicas", codigo: "NTSFF", portada: "./img/NTSFF.webp", prologo: "" }, 
+{ nombreYautor: "Nuestro Tiempo: Derechos humanos (24) - Fernándo Ordóñez", categoria: "politicaspublicas", codigo: "NTDFO", portada: "./img/NTDFO.webp", prologo: "" }, 
   ],
 };
 
@@ -77,9 +86,8 @@ items.data.sort((a, b) => (a.nombreYautor < b.nombreYautor ? -1 : 1));
 
 //Funcionamiento
 document.getElementById("search-input").addEventListener("keyup", (event) => {
-  if (event.key === "Enter") {
-    document.getElementById("search").click();
-  }
+  //if (event.key === "Enter") {
+  document.getElementById("search").click();
 });
 
 for (let i of items.data) {
@@ -201,4 +209,22 @@ document.getElementById("search").addEventListener("click", () => {
 //Initially display all items
 window.onload = () => {
   filterProduct("all");
+};
+
+//Form
+
+let reservaBtn = document.getElementById("form");
+let isOpen = false;
+reservaBtn.onclick = function () {
+  let iframe = document.getElementById("iframe");
+  iframe.style.display == "none"
+    ? (iframe.style.display = "block")
+    : (iframe.style.display = "none");
+  if (!isOpen) {
+    reservaBtn.innerHTML = "Cerrar";
+    isOpen = true;
+  } else {
+    reservaBtn.innerHTML = "Para leer o reservar un libro, click acá 👆📚";
+    isOpen = false;
+  }
 };
